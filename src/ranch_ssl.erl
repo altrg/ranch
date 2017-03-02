@@ -148,7 +148,7 @@ listen(Opts) ->
 	%% The port in the options takes precedence over the one in the
 	%% first argument.
 	ssl:listen(0, ranch:filter_options(Opts3,
-		[backlog, cacertfile, cacerts, cert, certfile, ciphers,
+		[backlog, cacertfile, cacerts, cert, certfile, ciphers, dh, dhfile,
 			fail_if_no_peer_cert, hibernate_after, ip, key, keyfile,
 			next_protocols_advertised, nodelay, password, port, raw,
 			reuse_session, reuse_sessions,
